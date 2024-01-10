@@ -49,7 +49,7 @@ function goto(path: string) {
             text-color="#fff"
             unique-opened>
 
-          <el-menu-item v-for="item in paths" :index="item.path" @click="goto(item.path)">
+          <el-menu-item class="menu-item" v-for="item in paths" :index="item.path" @click="goto(item.path)">
             <i class="el-icon-setting"></i>
             <span slot="title">{{ item.title }}</span>
           </el-menu-item>
@@ -98,11 +98,14 @@ function goto(path: string) {
 
 #aside {
   background-color: #333744;
-  border-right: none;
 }
 
 #main {
   background-color: #eaedf1;
+}
+
+.menu-item {
+  border-right: none;
 }
 
 </style>
