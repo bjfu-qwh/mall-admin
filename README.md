@@ -27,6 +27,6 @@ npm install
 
 ## vue组件说明
 
-项目使用了**TypeScript**，并且使用了**组合式API**。初步的示例已经在**src/components/Home**目录中给出，
-但这并不意味着**强制使用上述选项**。选项式API以及JavaScript语言都是可以使用的。
+项目使用了**TypeScript**，并且使用了**组合式API**。初步的示例已经在**src/components/User**目录中给出，
+但这并不意味着**强制使用上述任何选项**。选项式API以及JavaScript语言都是可以使用的。
 
