@@ -4,5 +4,6 @@ export interface User {
     age: number,
     status: string,
     email: string,
-    phone: string
+    phone: string,
+    userRole: string,
 }

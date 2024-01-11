@@ -1,5 +1,10 @@
 import axios from 'axios';
 
+export enum Code {
+    CODE_SUCCESS = 200,
+    CODE_ERROR = 500,
+}
+
 /**
  * 这个接口和后端传递的数据格式一致
  */

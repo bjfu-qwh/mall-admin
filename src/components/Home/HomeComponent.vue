@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import {useRouter} from "vue-router";
 import {ref} from "vue";
 
@@ -42,14 +42,14 @@ function goto(path: string) {
       <el-aside id="aside" width="200px">
         <!-- 侧边栏菜单区 -->
         <el-menu
-            :router="true"
             :default-active="activePath"
+            :router="true"
             active-text-color="#409eff"
             background-color="#333744"
             text-color="#fff"
             unique-opened>
 
-          <el-menu-item class="menu-item" v-for="item in paths" :index="item.path" @click="goto(item.path)">
+          <el-menu-item v-for="item in paths" :index="item.path" class="menu-item" @click="goto(item.path)">
             <i class="el-icon-setting"></i>
             <span slot="title">{{ item.title }}</span>
           </el-menu-item>
